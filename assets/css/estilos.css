@@ -1,0 +1,94 @@
+/* =========================
+   HERO PRINCIPAL
+========================= */
+.main-section {
+  background-image: url('../img/img-main.jpeg');
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+
+/* Oscurecer ligeramente la imagen para que el texto se vea mejor */
+.main-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.main-section h1 {
+  position: relative;
+  z-index: 2;
+  font-weight: 700;
+}
+
+/* =========================
+   FONDO GENERAL
+========================= */
+body {
+  background-color: #4d4e50;
+}
+
+/* =========================
+   CARDS
+========================= */
+.card {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Efecto elegante al pasar el mouse */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.12);
+}
+
+/* Imagen de la card */
+.card img {
+  height: 220px;
+  object-fit: cover; /* Evita que se deforme */
+}
+
+/* Títulos */
+h2 {
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+  background-color: #212529;
+  color: #ffffff;
+}
+
+.footer h5,
+.footer h6 {
+  font-weight: 600;
+}
+
+.footer a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer a:hover {
+  color: #0d6efd;
+}
+
+.footer-bottom {
+  background-color: #1a1e21;
+  font-size: 14px;
+}
